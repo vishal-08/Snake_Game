@@ -41,7 +41,6 @@ function isCollide(snake) {
     
 }
 
-
 function gameEngine(){
     
     //Updating the Snake Array and Food
@@ -66,6 +65,7 @@ function gameEngine(){
          food = {x: Math.round(a+ (b-a)*Math.random()), y: Math.round(a+ (b-a)*Math.random())}
     }
 
+    
     //Snake Moving Code
     for(let i=snakeArr.length-2; i>=0; i--)
     {
@@ -100,15 +100,6 @@ function gameEngine(){
     board.appendChild(foodElement);
   
 }
-
-
-
-
-
-
-
-
-
 
 //Main Logic
 window.requestAnimationFrame(main)
